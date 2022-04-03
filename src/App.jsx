@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Topbar from './components/topbar/Topbar';
 import Intro from './components/intro/Intro';
 import About from './components/about/About';
@@ -9,10 +9,12 @@ function App() {
   return (
     <div className="App">
       <Topbar/>
-      <Intro/>
-      <About/>
-      <Portfolio/>
-      <Contact/>
+      <div className='sections'>
+        <Intro/>
+        <About/>
+        <Portfolio/>
+        <Contact/>
+      </div>
     </div>
   );
 }

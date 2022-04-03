@@ -1,0 +1,26 @@
+@font-face {
+  font-family: retro-gaming;
+   src: url(../public/Retro-Gaming.ttf)
+  //src: local('retro-gaming'), url(../public/Retro\ Gaming.ttf) format(truetype)
+}
+
+.App {
+    font-family: retro-gaming;
+    color: aqua;
+    height: 100vh;
+
+    .sections{
+      width: 100%;
+      height: calc(100vh - 70px);
+      background-color: lightpink;
+      position: relative;
+      top: 70px;
+
+      > *{
+        width: 100vw;
+        height: calc(100vh - 70px);
+      }
+    }
+}
+
+
