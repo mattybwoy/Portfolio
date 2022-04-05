@@ -10,8 +10,9 @@ My Portfolio
 ## Objective
 Create a React Portfolio worthy of my greatness
 
-## Progress 
-
+## Progress
+- SASS installed 
+- Material UI installed
 ## Improvements
 
 ## Testing
@@ -19,4 +20,4 @@ Create a React Portfolio worthy of my greatness
 ## Screenshots
 
 ## Tech Stack
-React
+React, Sass
