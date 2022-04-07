@@ -9,15 +9,35 @@
   z-index: 2;
 
   .wrapper{
-    padding: 10px 30px;
+    padding: 10px 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     .left{
-      font-size: 40px;
-      font-weight: 700;
-      text-decoration: none;
+      display: flex;
+      align-items: center;
+
+      .handle{
+        font-size: 40px;
+        font-weight: 700;
+        text-decoration: none;
+        margin-right: 40px;
+      }
+      .itemContainer {
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+
+        .icon {
+          font-size: 16px;
+          margin-right: 5px;
+        }
+
+        span{
+          font-size: 15px;
+        }
+      }
     }
   }
 }
