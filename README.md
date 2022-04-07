@@ -13,6 +13,8 @@ Create a React Portfolio worthy of my greatness
 ## Progress
 - SASS installed 
 - Material UI installed
+- menuBar completed
+
 ## Improvements
 
 ## Testing
