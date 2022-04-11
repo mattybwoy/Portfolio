@@ -1,8 +1,21 @@
 import "./intro.scss"
-//import { ExpandMoreIcon } from "@material-ui/icons";
-import {ExpandMore} from '@material-ui/icons';
+import { ExpandMore } from '@material-ui/icons';
+import { init } from 'ityped'
+import { useEffect, useRef } from "react";
 
-export default function intro() {
+export default function Intro() {
+  const textRef = useRef();
+  useEffect(() => {
+    init(textRef.current, {
+      showCursor: true,
+      typeSpeed: 200,
+      startDelay: 1000,
+      backDelay: 3000,
+      backSpeed: 100,
+      strings: ["Junior Developer"],
+    })
+  },[]);
+
   return (
     <div className='intro' id='intro'>
       <div className="left">
@@ -14,9 +27,12 @@ export default function intro() {
         <div className="wrapper">
           <h2>Hi There, I'm</h2>
           <h1>Matthew Lock</h1>
-          <h3>Junior Developer<span></span></h3>
+          <h3>
+            <span ref={textRef}></span>
+          </h3>
+
           <a href="#about">
-            <ExpandMore className="icon" />
+            <ExpandMore className="icon"/>
           </a>
         </div>
       </div>

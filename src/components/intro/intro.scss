@@ -36,9 +36,23 @@
       h2{
         font-size: 35px;
       }
-      h3{
+      span{
         font-size: 30px;
       }
+
+      .ityped-cursor{
+        animation: blink 1s infinite;
+      }
+
+      @keyframes blink{
+        50%{
+          opacity: 0;
+        }
+        100%{
+          opacity: 0;
+        }
+      }
+
       a{
         position: absolute;
         bottom: 10px;
