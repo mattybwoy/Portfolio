@@ -3,19 +3,27 @@ import "./portfolio.scss";
 import { useState } from "react";
 
 export default function Portfolio() {
-  const [selected, setSelected] = useState("website")
+  const [selected, setSelected] = useState("all")
   const list = [
     {
-      id: "website",
-      title: "Website"
+      id: "all",
+      title: "All"
+    }, 
+    {
+      id: "react",
+      title: "React"
+    }, 
+    {
+      id: "react native",
+      title: "React Native"
+    }, 
+    {
+      id: "javascript",
+      title: "Javascript"
     },
     {
-      id: "web",
-      title: "Web App"
-    },
-    {
-      id: "mobile",
-      title: "Mobile App"
+      id: "swift",
+      title: "Swift"
     }
   ]
 
