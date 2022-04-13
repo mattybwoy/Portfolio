@@ -1,9 +1,12 @@
 import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { allPortfolio, reactPortfolio, reactNativePortfolio, javascriptPortfolio, swiftPortfolio } from "../../data";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("all")
+  const [data, setData] = useState([])
+
   const list = [
     {
       id: "all",
@@ -14,7 +17,7 @@ export default function Portfolio() {
       title: "React"
     }, 
     {
-      id: "react native",
+      id: "react-native",
       title: "React Native"
     }, 
     {
@@ -27,6 +30,29 @@ export default function Portfolio() {
     }
   ]
 
+  useEffect(() => {
+
+    switch (selected) {
+      case "all":
+        setData(allPortfolio);
+        break;
+      case "react":
+        setData(reactPortfolio);
+        break;
+      case "react-native":
+        setData(reactNativePortfolio);
+        break;
+      case "javascript":
+        setData(javascriptPortfolio);
+        break;
+      case "swift":
+        setData(swiftPortfolio);
+        break;
+      default:
+        setData(allPortfolio);
+    }
+  }, [selected]);
+
   return (
     <div className='portfolio' id='portfolio'>
       <h1>Portfolio</h1>
@@ -36,30 +62,12 @@ export default function Portfolio() {
       ))}
       </ul>
       <div className="container">
-        <div className="item">
-          <img src="assets/Lofi_girl_logo.jpeg" alt=""/>
-        <h3>Lofi Radio</h3>
-        </div>
-        <div className="item">
-          <img src="assets/Lofi_girl_logo.jpeg" alt="" />
-          <h3>Lofi Radio</h3>
-        </div>
-        <div className="item">
-          <img src="assets/Lofi_girl_logo.jpeg" alt="" />
-          <h3>Lofi Radio</h3>
-        </div>
-        <div className="item">
-          <img src="assets/Lofi_girl_logo.jpeg" alt="" />
-          <h3>Lofi Radio</h3>
-        </div>
-        <div className="item">
-          <img src="assets/Lofi_girl_logo.jpeg" alt="" />
-          <h3>Lofi Radio</h3>
-        </div>
-        <div className="item">
-          <img src="assets/Lofi_girl_logo.jpeg" alt="" />
-          <h3>Lofi Radio</h3>
-        </div>
+        {data.map((d) => (
+          <div className="item">
+            <img src={d.img} alt="" />
+            <h3>{d.title}</h3>
+          </div>
+        ))}
       </div>
     </div>
   )

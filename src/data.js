@@ -27,7 +27,7 @@ export const allPortfolio = [
   {
     id: 6,
     title: "Lofi Radio",
-    img: "../public/Lofi_girl_logo.jpeg"
+    img: "https://i.ytimg.com/vi/5qap5aO4i9A/maxresdefault.jpg"
   }
 ];
 
@@ -67,6 +67,6 @@ export const swiftPortfolio = [
   }, {
     id: 3,
     title: "Lofi Radio",
-    img: "../public/Lofi_girl_logo.jpeg"
+    img: "https://i.ytimg.com/vi/5qap5aO4i9A/maxresdefault.jpg"
   }
 ];
