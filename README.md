@@ -13,7 +13,9 @@ Create a React Portfolio worthy of my greatness
 ## Progress
 - SASS installed 
 - Material UI installed
-- menuBar completed
+- MenuBar completed
+- EmailJS installed
+- Messages can be sent in contact me section
 
 ## Improvements
 
