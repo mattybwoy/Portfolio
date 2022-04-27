@@ -1,3 +1,28 @@
+@import "../../global.scss";
+
 .about {
-  background-color: darkkhaki;
+  background-color: $mainColor;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h1{
+    font-size: 50px;
+
+    @include mobile{
+      font-size: 20px
+    }
+  }
+
+  .top{
+
+  }
+
+  .middle{
+
+  }
+
+  .bottom{
+    margin-top: 50px;
+  }
 }
