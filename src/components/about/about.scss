@@ -19,10 +19,32 @@
   }
 
   .middle{
-
+    width: 50%;
   }
 
   .bottom{
+    font-size: 30px;
     margin-top: 50px;
+
+    img{
+      height: 30px;
+    }
+  }
+
+  .pictures {
+    flex-direction: row;
+    align-items: center;
+    object-fit: contain;
+    flex: 20%;
+    padding: 10px;
+    max-width: 70%;
+    //height: 0px;
+    //width: 0px;
+
+    img{
+      width: 100px;
+      padding: 50px;
+    }
   }
 }
+
