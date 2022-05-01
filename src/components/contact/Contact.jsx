@@ -10,14 +10,20 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_2bw6f7j', 'template_ruettum', form.current, 'M9xCb82F0UrK3EDGl')
-    setMessage(true)
+
+    if (!e.target.name.value || !e.target.email.value || !e.target.message.value) {
+      console.log('error')
+    } else {
+      emailjs.sendForm('service_2bw6f7j', 'template_ruettum', form.current, 'M9xCb82F0UrK3EDGl')
+      setMessage(true)
+    }
     e.target.reset()
   };
   
   return (
     <div className='contact' id='contact'>
       <div className='left'>
+        <img src="./assets/wbb.png" alt=''/>
       </div>
       <div className ="right">
         <h2>Contact</h2>
