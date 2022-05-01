@@ -76,9 +76,14 @@
       }
     }
 
-    span{
-      color: green;
-    }
+      .msg{
+        color: green;
+      }
+      
+      .error{
+        color: $secondaryColor
+      }
+    
     }
   }
 }
