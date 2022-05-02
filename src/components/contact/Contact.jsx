@@ -5,7 +5,7 @@ import emailjs from 'emailjs-com';
 export default function Contact() {
 
   const [message, setMessage] = useState(false);
-  const [errorMessage, setErrorMessage] = useState(false)
+  const [errorMessage, setErrorMessage] = useState(false);
 
   const form = useRef();
 
@@ -35,6 +35,7 @@ export default function Contact() {
           <input type="text" name = "email" placeholder="Email"/>
           <textarea name = "message" placeholder = "Message"></textarea>
           <button type="submit">Send</button>
+          <br></br>
           {message && <span className="msg">Thanks, I'll reply soon</span>}
           {errorMessage && <span className="error">Please fill in all fields</span>}
         </form>
