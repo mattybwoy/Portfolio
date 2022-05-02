@@ -35,12 +35,15 @@
         }
 
         .icon {
-          font-size: 16px;
+          color: $secondaryColor;
+          font-size: 15px;
           margin-right: 5px;
         }
 
-        span{
+        .mailTo{
           font-size: 15px;
+          color: $secondaryColor;
+          text-decoration: none;
         }
       }
     }
@@ -57,7 +60,7 @@
         span{
           width: 100%;
           height: 3px;
-          background-color: rgb(102,51,102);
+          background-color: rgb(83,28,138);
           transform-origin: left;
           transition: all 2s ease;
         }
@@ -66,7 +69,7 @@
   }
 
   &.active{
-    background-color: black;
+    background-color: rgb(34,34,34);
     color: $secondaryColor;
 
     .hamburger{

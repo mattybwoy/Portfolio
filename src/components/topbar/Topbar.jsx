@@ -8,8 +8,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
         <div className="left">
           <a href='#intro' className="handle">MattyBwoy</a>
           <div className="itemContainer">
-            <Mail className="icon" />
-            <span>matthew_lock20@hotmail.com</span>
+            <a href="#contact" className="mailTo"><Mail className="icon" />matthew_lock20@hotmail.com</a>
           </div>
         </div>
         

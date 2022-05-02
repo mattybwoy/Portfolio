@@ -41,6 +41,8 @@
       align-items: center;
 
     input{
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 600;
       border-color: $secondaryColor;
       border-width: 3px;
       width: 300px;
@@ -54,6 +56,8 @@
       }
     }
     textarea{
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 600;
       border-color: $secondaryColor;
       border-width: 3px;
       width: 300px;
